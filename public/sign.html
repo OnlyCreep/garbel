@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Войти | Регистрация</title>
+    <link rel="stylesheet" href="../src/sign_styles/index.css" />
+  </head>
+  <body>
+    <div href="../public/index.html" class="back">
+      <a href="../public/index.html" class="back-bar">
+        <img src="img/icons8-back-50.png" alt="" style="filter: invert(1)" />
+      </a>
+    </div>
+    <main class="sign_panel">
+      <div class="sign_panel_follow sign">
+        <img src="img/user.png" alt="" class="sign_panel-user_icon" />
+        <span class="sign_panel-user_title">Войти</span>
+        <form class="sign_panel-user_form">
+          <div class="sign_panel-user_form-follow">
+            <input
+              type="text"
+              class="sign_panel-user_form-input"
+              onchange="input_valid(0)"
+            />
+            <label class="sign_panel-user_form-label">Логин</label>
+          </div>
+          <div class="sign_panel-user_form-follow">
+            <input
+              type="text"
+              class="sign_panel-user_form-input"
+              onchange="input_valid(1)"
+            />
+            <label class="sign_panel-user_form-label">Пароль</label>
+          </div>
+          <span class="sign_panel-user_form-qs">
+            <span class="sign_panel-user_form-qs-title">Нет аккаунта</span>
+            <span class="sign_panel-user_form-qs-butt" onclick="swipe('sign')">Регистрация</span>
+          </span>
+          <button type="button" class="sign_panel-user_form-butt">Войти</button>
+        </form>
+      </div>
+      <div class="sign_panel_follow reg">
+        <img src="img/user.png" alt="" class="sign_panel-user_icon" />
+        <span class="sign_panel-user_title">Регистрация</span>
+        <form class="sign_panel-user_form">
+          <div class="sign_panel-user_form-follow">
+            <input
+              type="text"
+              class="sign_panel-user_form-input"
+              onchange="input_valid(2)"
+            />
+            <label class="sign_panel-user_form-label">Логин</label>
+          </div>
+          <div class="sign_panel-user_form-follow">
+            <input
+              type="text"
+              class="sign_panel-user_form-input"
+              onchange="input_valid(3)"
+            />
+            <label class="sign_panel-user_form-label">Email</label>
+          </div>
+          <div class="sign_panel-user_form-follow">
+            <input
+              type="text"
+              class="sign_panel-user_form-input"
+              onchange="input_valid(4)"
+            />
+            <label class="sign_panel-user_form-label">Пароль</label>
+          </div>
+          <span class="sign_panel-user_form-qs" style="margin-top: 45px;">
+            <span class="sign_panel-user_form-qs-title">Уже есть аккаунт</span>
+            <span class="sign_panel-user_form-qs-butt" onclick="swipe('reg')">Войти</span>
+          </span>
+          <button type="button" class="sign_panel-user_form-butt" style="margin-top: 45px;">Регистрация</button>
+        </form>
+      </div>
+    </main>
+    <script src="../src/sign.js"></script>
+  </body>
+</html>
